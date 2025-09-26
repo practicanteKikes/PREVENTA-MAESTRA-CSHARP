@@ -1,0 +1,67 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Jwt": {
+    "Key": "4202-oiluj-13-ipa-maestras-soicogenoib", // 'bionegocios-maestras-api-31-julio-2024' - meramente un nombre con fecha
+    "Issuer": "https://www.huevoskikes.com",
+    "Audience": "https://bionegocios.kikescloud.com.co",
+    "Subject": "WebApiKikesBionegociosMaestrasAPi",
+    "TokenMinutesToExpire": 240, // Al cabo de 60 minutos
+    "TokenMinutesToBeCached": 230 // Cachearemos durante 50 minutos
+  },
+  "ConnectionStrings": {
+    // Windows ODBC Set Only [Dsn + Host + Port + Database Name] - (user and password let empty because credentials are sended by csharp appsettings.json)
+    "ODBC64-INCUSANWS-MASTER": "Dsn=ODBC64-INCUSANWS-MASTER-JAHIR;uid=jahirhe;pwd=incusan;" // Leeremos tabla ws_configuraciones para setear DbInput and DbOutput    
+  },
+  "SecurityStrings": {
+    "EncryptionKey": "123456789012issa"
+  },
+  "SoapStrings": {
+    "NameSpacePrefix": "onl",
+    "Namespace": "http://biller.com/onlinebilling"
+  },
+  "CustomErrorReporting": {
+    "EnableDevelopmentConsoleLog": false, // false in production
+    "EnableErrorLogToFile": false,
+    "EnableInMessagesLogToFile": false,
+    "EnableOutMessagesLogToFile": false,
+    "EnableOutMessagesLogToDatabase": true // true in production,  
+  },
+  "CustomApp": {
+    "SwaggerApiName": "Bionegocios Maestras API v1", // Example: "api/" - Works when using CustomRoute instead of Route()
+    "RoutePrefix": "bn_maestras/api/v1/", // Example: "api/" - Works when using CustomRoute instead of Route()
+    "SwaggerMinutesExpirationCookie": 60, // Minutos para que Controller reescriba el tiempo default
+    "EnableSwaggerAuthCookieMiddleware": true, // true in production,  
+
+    "Url_Published_Version": "localhost:5255/RoutePrefix/CurrentProject/status", // Info only: like readme for windows user file opened
+    "EnableRewriteCredentialsFromToDatabase": true, // true in production,
+    "SpoolFolder": "C:/",
+    "TempFolder": "spool/temp/",
+    //"SpoolFolder": "C:/inetpub/wwwroot_bionegocios_public_s3/", // Debe ser un lugar diferente de la API
+    //"TempFolder": "spool/temp/", // 
+    "StoragePublicUrl": "http://localhost:8009/", // 
+    "Li_limit_max_allowed": 500,
+    "Ls_bionegocios_clientes_table": "vw_clientes_full_BIO",
+    "Ls_bionegocios_tipos_negocio_table": "vw_tipos_negocio_C",
+    "Ls_response_domain": "http://localhost:5255"
+  },
+
+  // Default initial values from appsettings.json - Se reescriben desde BDMaster
+  "CustomDbInfoConfig": {
+    "DatabaseInputOuput": {
+      "Db_engine_connection": "sybase", // Informational only
+      "Id": "2", // Ws_configuraciones_id      
+      "Odbc_name": "ODBC64-BIONE-MAESTRAS", // Maximo 32 caracteres
+      "Host": "192.168.1.27",
+      "Port": "5000",
+      "Db_name": "test_incusanD",
+      "User": "theuser",
+      "Password": "thepasswd"
+    }
+  }
+}
