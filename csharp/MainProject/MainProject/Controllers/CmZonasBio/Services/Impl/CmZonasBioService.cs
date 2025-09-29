@@ -602,7 +602,7 @@ namespace MainProject.Controllers.CmZonasBio.Services.Impl
         { "li_limit", aParams.Limit },
         { "ls_fec_registro_min", aParams.Fec_registro_min },
         { "li_after_id", aParams.After_id },
-        { "ls_id_zona",id_zona } // Filtro adicional por código de zona
+        { "ls_zona",id_zona } // Filtro adicional por código de zona
     };
 
             // Ejecutamos la consulta remota

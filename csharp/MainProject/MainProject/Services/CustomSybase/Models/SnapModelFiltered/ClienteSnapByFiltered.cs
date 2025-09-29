@@ -14,9 +14,11 @@ namespace MainProject.Services.CustomSybase.Models.SnapModelFiltered
     // PARAMS
     [SqlParameter("afteridArgument", typeof(int))]
     [SqlParameter("fecregistroArgument", typeof(string))]
+    [SqlParameter("idzonaArgument", typeof(string))]
+
 
     // WHERE 
-    [SqlWhere("id > :afteridArgument and fec_registro >= :fecregistroArgument")]
+    [SqlWhere("id > :afteridArgument and fec_registro >= :fecregistroArgument AND id_zona = :idzonaArgument")]
     //[SqlWhere("fec_registro >= :fecregistroArgument")]
 
     // ORDER BY

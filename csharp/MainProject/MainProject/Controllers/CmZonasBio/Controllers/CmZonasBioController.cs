@@ -6,6 +6,7 @@ using MainProject.Controllers.CmZonasBio.Services;
 using MainProject.Services.CustomHelper;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MainProject.Controllers.CmZonasBio.Controllers
 {
@@ -48,6 +49,7 @@ namespace MainProject.Controllers.CmZonasBio.Controllers
               [FromQuery] int? limit = 2
             , [FromQuery] string? fec_registro_min = "1899-12-31" // 1900-12-31
             , [FromQuery] int? after_id = 0
+            
         )
         {
 
@@ -94,13 +96,20 @@ namespace MainProject.Controllers.CmZonasBio.Controllers
 
             return StatusCode(HttpContext.Response.StatusCode, result);//return 200 response
 
-            
+         
 
             
             }
+        }
+
+
+
+
 
         }
-        }
+
+        
+        
 
 
 

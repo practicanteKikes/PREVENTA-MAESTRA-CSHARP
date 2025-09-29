@@ -10,6 +10,6 @@
 
 
         // additional filters
-        //public string Zona { get; set; }
+        public string id_Zona { get; set; }
     }
 }

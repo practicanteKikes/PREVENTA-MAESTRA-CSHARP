@@ -393,7 +393,7 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "ls_zona", "" },
+                { "ls_id_zona", "" },
                 { "li_limit", 50 }
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
@@ -418,7 +418,7 @@ namespace MainProject.Services.CustomSybase.Impl
             List<object> minimalRequiredModelParams = new List<object> { li_after_id, ls_fec_registro_min };
             if (ls_zona.Length > 0)
             {
-                Builder.AndWhere("zona", SqlBinaryOperator.Equals, SqlBuilder.Parameter<string>("zonaArgument"));
+                Builder.AndWhere("id_zona", SqlBinaryOperator.Equals, SqlBuilder.Parameter<string>("zonaArgument"));
                 minimalRequiredModelParams.Add(ls_zona);
             }
 
@@ -457,7 +457,7 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "ls_zona", "" },
+                { "ls_id_zona", "" },
                 { "li_limit", 50 }
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
@@ -485,13 +485,13 @@ namespace MainProject.Services.CustomSybase.Impl
 
             if (ls_fec_registro_min.Length > 0)
             {
-                sqlQuery += " and fec_registro >= :fecregistroArgument";
+                sqlQuery += " and fec_registro >= :fecregistroArgument and id_zona= :zonaArgument";
                 minimalRequiredModelParams.Add(ls_fec_registro_min);
             }
 
             if (ls_zona.Length > 0)
             {
-                sqlQuery += " and zona= :zonaArgument";
+                sqlQuery += " and id_zona= :zonaArgument";
                 minimalRequiredModelParams.Add(ls_zona);
             }
 
@@ -608,7 +608,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -674,7 +675,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -829,7 +831,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -896,7 +899,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1017,7 +1021,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1088,7 +1093,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1394,7 +1400,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1465,7 +1472,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1580,7 +1588,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1651,7 +1660,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1767,7 +1777,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1838,7 +1849,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -1954,7 +1966,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
@@ -2025,7 +2038,8 @@ namespace MainProject.Services.CustomSybase.Impl
             {
                 { "li_after_id", -1 },
                 { "ls_fec_registro_min", "" }, // 1800-12-31
-                { "li_limit", 50 }
+                { "li_limit", 50 },
+                { "ls_id_zona", "" },
             };
             Dictionary<string, object> ldictionary_mergedResult = _customHelper.MergeArrays(la_params_default, la_params); // merge the params
 
