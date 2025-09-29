@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<form method="post" action="@ViewData["ls_backend_url_login"]">
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required value="@ViewData["ls_email_devmode"]" />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required value="@ViewData["ls_password_devmode"]" />
+    </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+</form>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color: red;">@ViewBag.ErrorMessage</p>
+}

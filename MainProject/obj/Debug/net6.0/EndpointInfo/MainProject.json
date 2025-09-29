@@ -1,0 +1,2981 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MainProject",
+    "version": "1.0"
+  },
+  "paths": {
+    "/bn_maestras/api/v1/CmLineasProductos/lineas_productos": {
+      "get": {
+        "tags": [
+          "CmLineasProductos"
+        ],
+        "summary": "Permite obtener la lista de |lineas_productos| de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmLineasProductosFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmLineasProductosFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmLineasProductosFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmLineasProductos/lineas_productos_all": {
+      "get": {
+        "tags": [
+          "CmLineasProductos"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de |lineas_productos_all| de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmLineasProductosAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmLineasProductosAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmLineasProductosAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmMotivosNc/motivos_nc": {
+      "get": {
+        "tags": [
+          "CmMotivosNc"
+        ],
+        "summary": "Permite obtener la lista de |motivos_nc| de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmMotivosNcFnResMainGetFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmMotivosNcFnResMainGetFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmMotivosNcFnResMainGetFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmMotivosNc/motivos_nc_all": {
+      "get": {
+        "tags": [
+          "CmMotivosNc"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de |motivos_nc_all| de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmMotivosNcFnResMainGetAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmMotivosNcFnResMainGetAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmMotivosNcFnResMainGetAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmProductos/productos": {
+      "get": {
+        "tags": [
+          "CmProductos"
+        ],
+        "summary": "Permite obtener la lista de |productos| de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmProductosFnResMainGetFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmProductosFnResMainGetFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmProductosFnResMainGetFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmProductos/productos_all": {
+      "get": {
+        "tags": [
+          "CmProductos"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de |productos_all| de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmProductosFnResMainGetAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmProductosFnResMainGetAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmProductosFnResMainGetAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmUsuariosMovil/usuarios_movil": {
+      "get": {
+        "tags": [
+          "CmUsuariosMovil"
+        ],
+        "summary": "Permite obtener la lista de |usuarios_movil| de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmUsuariosMovilFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmUsuariosMovilFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmUsuariosMovilFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmUsuariosMovil/usuarios_movil_all": {
+      "get": {
+        "tags": [
+          "CmUsuariosMovil"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de |usuarios_movil_all| de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmUsuariosMovilAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmUsuariosMovilAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetCmUsuariosMovilAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmZonasBio/zonas_bio": {
+      "get": {
+        "tags": [
+          "CmZonasBio"
+        ],
+        "summary": "Permite obtener la lista de |zonas_bio| de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmZonasBioFnResMainGetFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmZonasBioFnResMainGetFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmZonasBioFnResMainGetFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CmZonasBio/zonas_bio_all": {
+      "get": {
+        "tags": [
+          "CmZonasBio"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de |zonas_bio_all| de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmZonasBioFnResMainGetAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmZonasBioFnResMainGetAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CmZonasBioFnResMainGetAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CurrentProject/status": {
+      "get": {
+        "tags": [
+          "CurrentProject"
+        ],
+        "summary": "Consulta si el servicio [web/api] está corriendo y respondiendo.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainProjectPublishedDateTime"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainProjectPublishedDateTime"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainProjectPublishedDateTime"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CurrentProject/get_record": {
+      "get": {
+        "tags": [
+          "CurrentProject"
+        ],
+        "summary": "Consulta si el servicio [web/api] tiene acceso a la bd.",
+        "description": "Obtiene un registro de la base de datos. Los resultados no retornan informacion sensible.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomClientes/clientes": {
+      "get": {
+        "tags": [
+          "CustomClientes"
+        ],
+        "summary": "Permite obtener la lista de clientes de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "zona",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetClientesFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetClientesFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetClientesFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomClientes/clientes_all": {
+      "get": {
+        "tags": [
+          "CustomClientes"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de clientes de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetClientesAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetClientesAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetClientesAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomDepartamentos/departamentos": {
+      "get": {
+        "tags": [
+          "CustomDepartamentos"
+        ],
+        "summary": "Permite obtener la lista de |departamentos| de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetDepartamentosFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetDepartamentosFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetDepartamentosFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomDepartamentos/departamentos_all": {
+      "get": {
+        "tags": [
+          "CustomDepartamentos"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de |departamentos| de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetDepartamentosAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetDepartamentosAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetDepartamentosAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomJwt/create_token": {
+      "post": {
+        "tags": [
+          "CustomJwt"
+        ],
+        "summary": "Permite obtener un Token JWT. [Por ahora solo disponible en POSTMAN]",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomJwt/tokenStatusDatabase": {
+      "post": {
+        "tags": [
+          "CustomJwt"
+        ],
+        "summary": "Permite consultar si hay algun error en el Token JWT generado anteriormente.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomMunicipios/municipios": {
+      "get": {
+        "tags": [
+          "CustomMunicipios"
+        ],
+        "summary": "Permite obtener la lista de |municipios| de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetMunicipiosFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetMunicipiosFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetMunicipiosFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomMunicipios/municipios_all": {
+      "get": {
+        "tags": [
+          "CustomMunicipios"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de |municipios| de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetMunicipiosAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetMunicipiosAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetMunicipiosAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomTiposNegocio/tipos_negocio": {
+      "get": {
+        "tags": [
+          "CustomTiposNegocio"
+        ],
+        "summary": "Permite obtener la lista de tipos negocio de forma filtrada y paginada.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2
+            }
+          },
+          {
+            "name": "fec_registro_min",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "1899-12-31"
+            }
+          },
+          {
+            "name": "after_id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetTiposNegocioFiltered"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetTiposNegocioFiltered"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjFnResMainGetTiposNegocioFiltered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bn_maestras/api/v1/CustomTiposNegocio/tipos_negocio_all": {
+      "get": {
+        "tags": [
+          "CustomTiposNegocio"
+        ],
+        "summary": "[Prototipo] Permite obtener la lista de tipos negocio de forma completa y sin paginar.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetTiposNegocioAll"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetTiposNegocioAll"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FnResMainGetTiposNegocioAll"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "summary": "Endpoint raiz que indica que el servicio [web/api] está corriendo.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ClienteJsonCustomized": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_empresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "Sucursal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Id_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_rut": {
+            "type": "string",
+            "nullable": true
+          },
+          "Canal_distribucion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Estado_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Primer_nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "Segundo_nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "Primer_apellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "Segundo_apellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fecha_cumpleanos": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Nom_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Tipo_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "Celular": {
+            "type": "string",
+            "nullable": true
+          },
+          "E_mail": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "Zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_dias_visita": {
+            "type": "string",
+            "nullable": true
+          },
+          "Orden_visita": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_entrega": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Cod_ruta_distribucion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_controlar_cupo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cupo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Saldo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Anticipos": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Nit_alterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_alterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "Apellidos_alterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "Plazo_factura": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Num_factura_cartera": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Ind_gran_contribuyente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_autoretenedor": {
+            "type": "string",
+            "nullable": true
+          },
+          "Resolucion_retencion_fuente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_agente_retencion_renta": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_facturar_iva": {
+            "type": "string",
+            "nullable": true
+          },
+          "Regimen_iva": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nota1": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fecha_ingreso": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha_factura": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Ind_modificado": {
+            "type": "string",
+            "nullable": true
+          },
+          "Naturaleza": {
+            "type": "string",
+            "nullable": true
+          },
+          "Razon_social": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_zona_facturacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_masivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_categoria_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Orden_visita_lunes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_martes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_miercoles": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_jueves": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_viernes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_sabado": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_domingo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Num_impresion_original": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_entrega_certificada": {
+            "type": "string",
+            "nullable": true
+          },
+          "Valor_latitud": {
+            "type": "string",
+            "nullable": true
+          },
+          "Valor_longitud": {
+            "type": "string",
+            "nullable": true
+          },
+          "Porcentaje_rotura": {
+            "type": "string",
+            "nullable": true
+          },
+          "Tipo_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Correo_factu_electronica": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmClientesModelJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_empresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "Sucursal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Id_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_rut": {
+            "type": "string",
+            "nullable": true
+          },
+          "Canal_distribucion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Estado_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Primer_nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "Segundo_nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "Primer_apellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "Segundo_apellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fecha_cumpleanos": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Nom_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Tipo_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "Celular": {
+            "type": "string",
+            "nullable": true
+          },
+          "E_mail": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "Zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_dias_visita": {
+            "type": "string",
+            "nullable": true
+          },
+          "Orden_visita": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_entrega": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Cod_ruta_distribucion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_controlar_cupo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cupo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Saldo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Anticipos": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nit_alterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_alterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "Apellidos_alterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "Plazo_factura": {
+            "type": "string",
+            "nullable": true
+          },
+          "Num_factura_cartera": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Ind_gran_contribuyente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_autoretenedor": {
+            "type": "string",
+            "nullable": true
+          },
+          "Resolucion_retencion_fuente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_agente_retencion_renta": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_facturar_iva": {
+            "type": "string",
+            "nullable": true
+          },
+          "Regimen_iva": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nota1": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fecha_ingreso": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha_factura": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Ind_modificado": {
+            "type": "string",
+            "nullable": true
+          },
+          "Naturaleza": {
+            "type": "string",
+            "nullable": true
+          },
+          "Razon_social": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_zona_facturacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_masivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_categoria_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Orden_visita_lunes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_martes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_miercoles": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_jueves": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_viernes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_sabado": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Orden_visita_domingo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Num_impresion_original": {
+            "type": "string",
+            "nullable": true
+          },
+          "Ind_entrega_certificada": {
+            "type": "string",
+            "nullable": true
+          },
+          "Valor_latitud": {
+            "type": "string",
+            "nullable": true
+          },
+          "Valor_longitud": {
+            "type": "string",
+            "nullable": true
+          },
+          "Porcentaje_rotura": {
+            "type": "string",
+            "nullable": true
+          },
+          "Tipo_cliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "Correo_factu_electronica": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmMotivosNcFnResMainGetAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CmMotivosNcModelAllJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmMotivosNcFnResMainGetFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CmMotivosNcModelJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmMotivosNcModelAllJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fec_act_int": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmMotivosNcModelJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fec_act_int": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmProductosFnResMainGetAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CmProductosModelAllJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmProductosFnResMainGetFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CmProductosModelJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmProductosModelAllJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Cod_prod": {
+            "type": "string",
+            "nullable": true
+          },
+          "Codigo_linea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_prod2": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_prod": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_corto": {
+            "type": "string",
+            "nullable": true
+          },
+          "Orden": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "Por_iva": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Cod_iva": {
+            "type": "string",
+            "nullable": true
+          },
+          "Porc_rte": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Cod_rte": {
+            "type": "string",
+            "nullable": true
+          },
+          "Embalaje": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Obliga": {
+            "type": "string",
+            "nullable": true
+          },
+          "Descarga": {
+            "type": "string",
+            "nullable": true
+          },
+          "Unidad_medida": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_sublinea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_sublinea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Permite_decimales": {
+            "type": "string",
+            "nullable": true
+          },
+          "Tipo_operacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Unidades_x_canasta": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Tipo_embalaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmProductosModelJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Cod_prod": {
+            "type": "string",
+            "nullable": true
+          },
+          "Codigo_linea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_prod2": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_prod": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_corto": {
+            "type": "string",
+            "nullable": true
+          },
+          "Orden": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "Por_iva": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Cod_iva": {
+            "type": "string",
+            "nullable": true
+          },
+          "Porc_rte": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Cod_rte": {
+            "type": "string",
+            "nullable": true
+          },
+          "Embalaje": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Obliga": {
+            "type": "string",
+            "nullable": true
+          },
+          "Descarga": {
+            "type": "string",
+            "nullable": true
+          },
+          "Unidad_medida": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cod_sublinea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_sublinea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Permite_decimales": {
+            "type": "string",
+            "nullable": true
+          },
+          "Tipo_operacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Unidades_x_canasta": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Tipo_embalaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmZonasBioFnResMainGetAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CmZonasBioModelAllJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmZonasBioFnResMainGetFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CmZonasBioModelJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmZonasBioModelAllJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Codigo_bodega": {
+            "type": "string",
+            "nullable": true
+          },
+          "Descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Id_zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "Estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CmZonasBioModelJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Codigo_bodega": {
+            "type": "string",
+            "nullable": true
+          },
+          "Descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Id_zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "Estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetCmLineasProductosAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelCmLineasProductosAllJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetCmLineasProductosFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelCmLineasProductosJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetCmUsuariosMovilAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kldt_fecha_servidor_ase": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelCmUsuariosMovilAllJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetCmUsuariosMovilFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelCmUsuariosMovilJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetDepartamentosAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelDepartamentoAllJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetDepartamentosFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelDepartamentoJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetMunicipiosAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelMunicipioAllJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetMunicipiosFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelMunicipioJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FnResMainGetTiposNegocioAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TipoNegocioAllMaestraCustomized"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelCmLineasProductosAllJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Codigo_linea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelCmLineasProductosJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Codigo_linea": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelCmUsuariosMovilAllJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Codigo_usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_completo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "Password": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nit": {
+            "type": "string",
+            "nullable": true
+          },
+          "Estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelCmUsuariosMovilJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Codigo_usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_completo": {
+            "type": "string",
+            "nullable": true
+          },
+          "Zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "Password": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nit": {
+            "type": "string",
+            "nullable": true
+          },
+          "Estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDepartamentoAllJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "Descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDepartamentoJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "Descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelMunicipioAllJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelMunicipioJsonCustom": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "Id_departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nombre_ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObjFnResMainGetClientesAll": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClienteJsonCustomized"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObjFnResMainGetClientesFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CmClientesModelJsonCustom"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObjFnResMainGetTiposNegocioFiltered": {
+        "type": "object",
+        "properties": {
+          "Filtered_total": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_limited": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Filtered_has_more": {
+            "type": "boolean"
+          },
+          "Next_page_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "Response_first_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Response_last_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "KerrorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TipoNegocioMaestraCustomized"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObjFnResMainProjectPublishedDateTime": {
+        "type": "object",
+        "properties": {
+          "Ksuccess": {
+            "type": "boolean"
+          },
+          "Kmessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kldt_fecha_servidor_ase": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Kdata": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoNegocioAllMaestraCustomized": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nota": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoNegocioMaestraCustomized": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "Id_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nom_negocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "Nota": {
+            "type": "string",
+            "nullable": true
+          },
+          "Fec_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "Fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "Date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "TemperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "TemperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "Summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Autorización JWT usando el esquema Bearer. \r\n\r\n Ingrese 'Bearer' [espacio] y luego su token en el campo de texto abajo.\r\n\r\nEjemplo: \"Bearer 12345abcdef\"",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+[
+  {
+    "ContainingType": "MainProject.Controllers.CmLineasProductos.Controllers.CmLineasProductosController",
+    "Method": "GetCmLineasProductosFiltered",
+    "RelativePath": "bn_maestras/api/v1/CmLineasProductos/lineas_productos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmLineasProductos.Models.CmLineasProductosFiltered.MainGetCmLineasProductosFilteredAsync.FnResMainGetCmLineasProductosFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmLineasProductos.Controllers.CmLineasProductosController",
+    "Method": "GetCmLineasProductosAll",
+    "RelativePath": "bn_maestras/api/v1/CmLineasProductos/lineas_productos_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmLineasProductos.Models.CmLineasProductosAll.MainGetCmLineasProductosAllAsync.FnRes.FnResMainGetCmLineasProductosAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmMotivosNc.Controllers.CmMotivosNcController",
+    "Method": "CmMotivosNcGetFiltered",
+    "RelativePath": "bn_maestras/api/v1/CmMotivosNc/motivos_nc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmMotivosNc.Models.CmMotivosNcFiltered.CmMotivosNcMainGetFilteredAsync.CmMotivosNcFnResMainGetFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmMotivosNc.Controllers.CmMotivosNcController",
+    "Method": "CmMotivosNcGetAll",
+    "RelativePath": "bn_maestras/api/v1/CmMotivosNc/motivos_nc_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmMotivosNc.Models.CmMotivosNcAll.CmMotivosNcMainGetAllAsync.CmMotivosNcFnResMainGetAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmProductos.Controllers.CmProductosController",
+    "Method": "CmProductosGetFiltered",
+    "RelativePath": "bn_maestras/api/v1/CmProductos/productos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmProductos.Models.CmProductosFiltered.CmProductosMainGetFilteredAsync.CmProductosFnResMainGetFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmProductos.Controllers.CmProductosController",
+    "Method": "CmProductosGetAll",
+    "RelativePath": "bn_maestras/api/v1/CmProductos/productos_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmProductos.Models.CmProductosAll.CmProductosMainGetAllAsync.CmProductosFnResMainGetAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmUsuariosMovil.Controllers.CmUsuariosMovilController",
+    "Method": "GetCmUsuariosMovilFiltered",
+    "RelativePath": "bn_maestras/api/v1/CmUsuariosMovil/usuarios_movil",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmUsuariosMovil.Models.CmUsuariosMovilFiltered.MainGetCmUsuariosMovilFilteredAsync.FnResMainGetCmUsuariosMovilFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmUsuariosMovil.Controllers.CmUsuariosMovilController",
+    "Method": "GetCmUsuariosMovilAll",
+    "RelativePath": "bn_maestras/api/v1/CmUsuariosMovil/usuarios_movil_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmUsuariosMovil.Models.CmUsuariosMovilAll.MainGetCmUsuariosMovilAllAsync.FnRes.FnResMainGetCmUsuariosMovilAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmZonasBio.Controllers.CmZonasBioController",
+    "Method": "CmZonasBioGetFiltered",
+    "RelativePath": "bn_maestras/api/v1/CmZonasBio/zonas_bio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmZonasBio.Models.CmZonasBioFiltered.CmZonasBioMainGetFilteredAsync.CmZonasBioFnResMainGetFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CmZonasBio.Controllers.CmZonasBioController",
+    "Method": "CmZonasBioGetAll",
+    "RelativePath": "bn_maestras/api/v1/CmZonasBio/zonas_bio_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CmZonasBio.Models.CmZonasBioAll.CmZonasBioMainGetAllAsync.CmZonasBioFnResMainGetAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CurrentProject.Controllers.CurrentProjectController",
+    "Method": "GetUserFromDb",
+    "RelativePath": "bn_maestras/api/v1/CurrentProject/get_record",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CurrentProject.Controllers.CurrentProjectController",
+    "Method": "ProjectPublishedDateTime",
+    "RelativePath": "bn_maestras/api/v1/CurrentProject/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CurrentProject.Models.FnRes.ObjFnResMainProjectPublishedDateTime",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomClientes.Controllers.CustomClientesController",
+    "Method": "GetClientesFiltered",
+    "RelativePath": "bn_maestras/api/v1/CustomClientes/clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "zona",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomClientes.Models.GetClientesFiltered.MainGetClientesFiltered.FnRes.ObjFnResMainGetClientesFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomClientes.Controllers.CustomClientesController",
+    "Method": "GetClientesAll",
+    "RelativePath": "bn_maestras/api/v1/CustomClientes/clientes_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomClientes.Models.GetClientesAll.MainGetClientesAllAzync.FnRes.ObjFnResMainGetClientesAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomDepartamentos.Controllers.CustomDepartamentosController",
+    "Method": "GetDepartamentosFiltered",
+    "RelativePath": "bn_maestras/api/v1/CustomDepartamentos/departamentos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomDepartamentos.Models.DepartamentosFiltered.MainGetDepartamentosFilteredAsync.FnResMainGetDepartamentosFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomDepartamentos.Controllers.CustomDepartamentosController",
+    "Method": "GetDepartamentosAll",
+    "RelativePath": "bn_maestras/api/v1/CustomDepartamentos/departamentos_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomDepartamentos.Models.DepartamentosAll.MainGetDepartamentosAllAsync.FnRes.FnResMainGetDepartamentosAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomJwt.Controllers.CustomJwtController",
+    "Method": "TokenCreateDatabase",
+    "RelativePath": "bn_maestras/api/v1/CustomJwt/create_token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomJwt.Controllers.CustomJwtController",
+    "Method": "TokenStatusDatabase",
+    "RelativePath": "bn_maestras/api/v1/CustomJwt/tokenStatusDatabase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomMunicipios.Controllers.CustomMunicipiosController",
+    "Method": "GetMunicipiosFiltered",
+    "RelativePath": "bn_maestras/api/v1/CustomMunicipios/municipios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomMunicipios.Models.MunicipiosFiltered.MainGetMunicipiosFilteredAsync.FnResMainGetMunicipiosFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomMunicipios.Controllers.CustomMunicipiosController",
+    "Method": "GetMunicipiosAll",
+    "RelativePath": "bn_maestras/api/v1/CustomMunicipios/municipios_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomMunicipios.Models.MunicipiosAll.MainGetMunicipiosAllAsync.FnRes.FnResMainGetMunicipiosAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomTiposNegocio.Controllers.CustomTiposNegocioController",
+    "Method": "GetTiposNegocioFiltered",
+    "RelativePath": "bn_maestras/api/v1/CustomTiposNegocio/tipos_negocio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fec_registro_min",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "after_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomTiposNegocio.Models.GetTiposNegocioFiltered.MainGetTiposNegocioFiltered.FnRes.ObjFnResMainGetTiposNegocioFiltered",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomTiposNegocio.Controllers.CustomTiposNegocioController",
+    "Method": "GetTiposNegocioAll",
+    "RelativePath": "bn_maestras/api/v1/CustomTiposNegocio/tipos_negocio_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MainProject.Controllers.CustomTiposNegocio.Models.GetTiposNegocioAll.MainGetTiposNegocioAllAsync.FnRes.FnResMainGetTiposNegocioAll",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MainProject.Controllers.CustomWeatherForecast.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MainProject.Controllers.CustomWeatherForecast.Models.WeatherForecast, MainProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
