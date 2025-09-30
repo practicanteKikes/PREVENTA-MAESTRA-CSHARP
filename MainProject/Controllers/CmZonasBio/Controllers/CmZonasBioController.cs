@@ -49,7 +49,7 @@ namespace MainProject.Controllers.CmZonasBio.Controllers
               [FromQuery] int? limit = 2
             , [FromQuery] string? fec_registro_min = "1899-12-31" // 1900-12-31
             , [FromQuery] int? after_id = 0
-            
+            , [FromQuery] string? id_zona= ""
         )
         {
 
@@ -58,7 +58,7 @@ namespace MainProject.Controllers.CmZonasBio.Controllers
 
             try
             {
-                result = await _CmZonasBio.CmZonasBioMainGetFilteredAsync(ls_json); // Pasamos ls_json para conservar estandar                
+                result = await _CmZonasBio.CmZonasBioMainGetFilteredAsync(id_zona); // Pasamos ls_json para conservar estandar                
 
             }
             catch (Exception ex)

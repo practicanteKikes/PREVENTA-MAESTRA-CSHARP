@@ -83,7 +83,7 @@ namespace MainProject.Controllers.CmZonasBio.Services.Impl
 
 
         // API publica por ahora
-        public async Task<string> CmZonasBioMainGetFilteredAsync(string ls_ctrl_json)
+        public async Task<string> CmZonasBioMainGetFilteredAsync(string id_zona)
         {
             CmZonasBioFnResMainGetFilteredDev objFnResDev = new();
          
@@ -249,6 +249,7 @@ namespace MainProject.Controllers.CmZonasBio.Services.Impl
                     // CUSTOMIZE PROPERTIES IN RESULT???
                     if (true)
                     {
+                        ObtainFilteredObjListResult.Kdata = ObtainFilteredObjListResult.Kdata.Where(x => x.Id_zona==id_zona).ToList();
                         int li_total_registros = ObtainFilteredObjListResult.Kdata.Count;
                         var user = new CmZonasBioModelJsonCustom();
                         
