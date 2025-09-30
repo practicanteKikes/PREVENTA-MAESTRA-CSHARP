@@ -1,0 +1,9 @@
+# .NET Git Ignore
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+.vs/
+*.user
+*.suo

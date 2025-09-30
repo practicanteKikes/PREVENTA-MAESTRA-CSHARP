@@ -398,6 +398,14 @@
               "format": "int32",
               "default": 0
             }
+          },
+          {
+            "name": "id_zona",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
           }
         ],
         "responses": {

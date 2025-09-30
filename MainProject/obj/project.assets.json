@@ -10156,11 +10156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\proyects\\csharp\\MainProject\\MainProject\\MainProject.csproj",
+      "projectUniqueName": "C:\\DAVID\\MainProject\\MainProject.csproj",
       "projectName": "MainProject",
-      "projectPath": "C:\\proyects\\csharp\\MainProject\\MainProject\\MainProject.csproj",
+      "projectPath": "C:\\DAVID\\MainProject\\MainProject.csproj",
       "packagesPath": "C:\\Users\\pract.sistemas1\\.nuget\\packages\\",
-      "outputPath": "C:\\proyects\\csharp\\MainProject\\MainProject\\obj\\",
+      "outputPath": "C:\\DAVID\\MainProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

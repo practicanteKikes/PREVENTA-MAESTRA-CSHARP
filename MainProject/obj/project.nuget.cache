@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+IIqTdZUoYw=",
+  "dgSpecHash": "PP/K7g/pUNE=",
   "success": true,
-  "projectFilePath": "C:\\proyects\\csharp\\MainProject\\MainProject\\MainProject.csproj",
+  "projectFilePath": "C:\\DAVID\\MainProject\\MainProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pract.sistemas1\\.nuget\\packages\\antlr4.runtime.standard\\4.9.3\\antlr4.runtime.standard.4.9.3.nupkg.sha512",
     "C:\\Users\\pract.sistemas1\\.nuget\\packages\\dwnet.data\\4.0.1\\dwnet.data.4.0.1.nupkg.sha512",
@@ -205,9 +205,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "El paquete \"Microsoft.Extensions.Caching.Memory\" 8.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
-      "projectPath": "C:\\proyects\\csharp\\MainProject\\MainProject\\MainProject.csproj",
+      "projectPath": "C:\\DAVID\\MainProject\\MainProject.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\proyects\\csharp\\MainProject\\MainProject\\MainProject.csproj",
+      "filePath": "C:\\DAVID\\MainProject\\MainProject.csproj",
       "libraryId": "Microsoft.Extensions.Caching.Memory",
       "targetGraphs": [
         "net6.0"
